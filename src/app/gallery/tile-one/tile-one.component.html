@@ -1,6 +1,6 @@
 <mat-grid-list cols="4" rowHeight="2:2" gutterSize="5px">
 <mat-grid-tile  *ngFor="let picsum of picsums">
-    <img [src]='picsum.url' alt="Image">
+    <img [src]="picsum.url" alt="Image">
     <div class="card-img-overlay overlay-blue-gradient text-white d-flex justify-content-center align-items-end">
       <p class="card-text">@{{picsum.author}}</p>
     </div>
