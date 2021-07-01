@@ -1,0 +1,18 @@
+.asterisk {
+    color: red;
+    font-weight: 500;
+}
+
+button {
+    font-weight: 600;
+    width: 80px;
+}
+
+mat-spinner {
+    margin: auto;
+    margin-top: 130px;
+}
+
+mat-card {
+    margin-top: 50px;
+}

@@ -1,0 +1,13 @@
+.mat-card-avatar {
+    border-radius: 0%;
+    height: 50px;
+    width: 50px;
+}
+
+mat-card-title {
+    font-family: 'Yellowtail', cursive;
+}
+
+ul>li {
+    cursor: pointer;
+}

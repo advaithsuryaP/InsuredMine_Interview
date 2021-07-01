@@ -1,0 +1,31 @@
+<mat-spinner *ngIf="isLoading" color="primary"></mat-spinner>
+<div class="container" *ngIf="!isLoading">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <mat-card>
+                <mat-card-content>
+                    <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+                        <div class="d-flex flex-column">
+                            <mat-form-field floatLabel="always">
+                                <mat-label>Username<span class="asterisk">*</span></mat-label>
+                                <input matInput type="text" formControlName="username" autocomplete="none">
+                                <mat-hint>Username: advaith</mat-hint>
+                                <mat-error>This is a mandatory field</mat-error>
+                            </mat-form-field>
+                            <mat-form-field floatLabel="always">
+                                <mat-label>Password<span class="asterisk">*</span></mat-label>
+                                <input matInput type="password" formControlName="password">
+                                <mat-hint>Same as username</mat-hint>
+                                <mat-error>This is a mandatory field</mat-error>
+                            </mat-form-field>
+                            <div class="d-flex justify-content-between">
+                                <button mat-raised-button [disabled]="authForm.invalid" color="primary">LOGIN</button>
+                                <button mat-raised-button type="button" (click)="authForm.reset()">RESET</button>
+                            </div>
+                        </div>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
