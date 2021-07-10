@@ -8,12 +8,14 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { TileOneComponent } from './tile-one/tile-one.component';
 import { TileTwoComponent } from './tile-two/tile-two.component';
 import { AuthGuard } from '../auth/services/auth.guard';
+import { GalleryDetailComponent } from './gallery-detail/gallery-detail.component';
 
 @NgModule({
   declarations: [
     GalleryComponent,
     TileOneComponent,
-    TileTwoComponent
+    TileTwoComponent,
+    GalleryDetailComponent
   ],
   imports: [
     CommonModule,

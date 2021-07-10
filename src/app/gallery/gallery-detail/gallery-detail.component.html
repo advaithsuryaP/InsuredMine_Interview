@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>@{{data.author}}</h1>
+<mat-dialog-content>
+    <img [src]="data.url" alt="Image" class="img-thumbnail">
+    <div class="row">
+        <div class="col-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laudantium sequi error. 
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>CANCEL</button>
+    <button mat-button color="primary" [mat-dialog-close]="true" cdkFocusInitial>BUY</button>
+</mat-dialog-actions>
